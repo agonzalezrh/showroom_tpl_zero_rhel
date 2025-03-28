@@ -10,6 +10,8 @@ Other vars can also be set there, such as `ssh_user` and `ssh_password`, and ref
 
 This is another var, or asciidoc attribute, from `./content/antora.yml` {my_var}
 
+{bastion_ssh_command}
+
 == Writing your lab
 
 Whatever type of content you are writing we'll refer to your *content* as "your lab" in this document.
