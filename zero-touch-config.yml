@@ -21,3 +21,6 @@ tabs:
   - name: ">_ rhel"
     port: 443
     path: /wetty
+  - name: Website
+    url: https://bastion.${DOMAIN}
+    external: true
