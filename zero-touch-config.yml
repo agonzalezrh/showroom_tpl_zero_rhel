@@ -23,4 +23,3 @@ tabs:
     path: /wetty
   - name: Website
     url: https://bastion.${DOMAIN}
-    external: true
