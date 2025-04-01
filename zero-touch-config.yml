@@ -22,7 +22,7 @@ tabs:
     port: 443
     path: /wetty
   - name: Bastion
-    url: https://bastion.${domain}
+    url: https://bastion-${guid}.${domain}
   - name: Bastion (external)
-    url: https://bastion.${domain}
+    url: https://bastion-${guid}.${domain}
     external: true
