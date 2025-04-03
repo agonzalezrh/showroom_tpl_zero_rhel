@@ -1,1 +1,1 @@
-/usr/bin/wall Welcome to last module!
+/usr/bin/wall Welcome to last module! Press enter to start.

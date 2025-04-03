@@ -1,1 +1,1 @@
-/usr/bin/wall Welcome to index module!
+/usr/bin/wall Welcome to the first module! Press enter to start.
