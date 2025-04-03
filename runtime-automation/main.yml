@@ -16,7 +16,7 @@
 
     - name: Execute setup.sh if it exists
       when: r_script_test.stat.exists
-      shell: "bash ./{{ module_stage }}/{{ stage }}.sh | tee -a /tmp/output.log"
+      shell: "bash ./{{ module_stage }}/{{ module_stage }}.sh"
       register: r_result
 
     - name: Output script result
