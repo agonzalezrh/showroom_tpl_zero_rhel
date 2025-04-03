@@ -1,1 +1,1 @@
-echo hello from setup.sh
+/usr/bin/wall Welcome to index module!
