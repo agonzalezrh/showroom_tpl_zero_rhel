@@ -15,12 +15,12 @@
 
     - name: Check if module_01/setup.sh exists
       ansible.builtin.stat:
-        path: "./{{ module_directory_prefix }}{{ module_number }}/{{ module_stage }}.sh"
+        path: "./{{ module_dir }}/{{ stage }}.sh"
       register: r_script_test
 
     - name: Execute setup.sh if it exists
       when: r_script_test.stat.exists
-      command: "bash ./{{ module_directory_prefix }}{{ module_number }}/{{ module_stage }}.sh"
+      command: "bash ./{{ module_dir }}/{{ stage }}.sh"
       register: r_result
 
     - name: Output script result
