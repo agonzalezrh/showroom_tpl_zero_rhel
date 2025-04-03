@@ -1,1 +1,1 @@
-echo hello from setup.sh
+echo Welcome to last module!
