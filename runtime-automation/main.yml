@@ -3,10 +3,6 @@
   hosts: all
   gather_facts: false
   become: false
-  vars:
-    module_directory_prefix: module_
-    module_number: 1
-    module_stage: setup
 
   tasks:
     - name: Simple debug task
@@ -20,9 +16,9 @@
 
     - name: Execute setup.sh if it exists
       when: r_script_test.stat.exists
-      command: "bash ./{{ module_dir }}/{{ stage }}.sh"
+      shell: "bash ./{{ module_dir }}/{{ stage }}.sh | tee -a /tmp/output.log"
       register: r_result
 
     - name: Output script result
       ansible.builtin.debug:
-        var: r_result
+        var: r_result.stdout
