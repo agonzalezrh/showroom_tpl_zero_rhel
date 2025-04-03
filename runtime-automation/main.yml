@@ -39,7 +39,7 @@
       ansible.builtin.copy:
         content: "{{ r_result.stdout }}"
         dest: "{{ job_info_dir }}/script.out"
-      delegate_to: locahost
+      delegate_to: localhost
       when: r_result is defined and job_info_dir is defined
 
     - name: Output script result
