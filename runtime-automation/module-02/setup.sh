@@ -1,1 +1,1 @@
-echo Welcome to second module!
+/usr/bin/wall Welcome to second module!
