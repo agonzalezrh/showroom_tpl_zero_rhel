@@ -12,15 +12,10 @@ antora:
       label: "Podman ps"
 
 tabs:
-  - name: ">_ Root"
+  - name: ">_ lab-user"
     port: 443
     path: /wetty
-    user: root
-    host: rhel
     type: tty
-  - name: ">_ rhel"
-    port: 443
-    path: /wetty
   - name: Bastion
     url: https://bastion-${guid}.${domain}
   - name: Bastion (external)
